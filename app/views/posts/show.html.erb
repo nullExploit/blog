@@ -9,6 +9,11 @@
         <%= button_to "Destroy this post", @post, method: :delete %>
       </div>
 
+      <div>
+        <h1><%= @post.title %></h1>
+        <%= image_tag(@post.pict.url, alt: 'Image') if @post.pict? %>
+      </div>
+
     </div>
 
     <div class="col-md-4">
