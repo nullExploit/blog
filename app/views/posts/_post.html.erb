@@ -1,18 +1,12 @@
 <div id="<%= dom_id post %>">
-  <p>
-    <strong>Title:</strong>
+  <h1 class="display-1">
     <%= post.title %>
-  </p>
+  </h1>
 
-  <p>
-    <strong>Content:</strong>
+  <p class="lead">
     <%= post.content %>
   </p>
 
-  <p>
-    <strong>Pict:</strong>
     <%= image_tag(post.pict.url, alt: 'Image', class: 'img-fluid') if post.pict? %>
-
-  </p>
 
 </div>
