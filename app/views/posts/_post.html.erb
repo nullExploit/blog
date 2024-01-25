@@ -11,7 +11,8 @@
 
   <p>
     <strong>Pict:</strong>
-    <%= post.pict %>
+    <%= image_tag(post.pict.url, alt: 'Image') if post.pict? %>
+
   </p>
 
 </div>
