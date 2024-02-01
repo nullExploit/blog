@@ -9,4 +9,10 @@
 
     <%= image_tag(post.pict.url, alt: 'Image', class: 'img-fluid') if post.pict? %>
 
+    <p>
+      <%= post.user.email if post.user %>
+    </p>
+    <p>
+      <%= post.created_at%>
+    </p>
 </div>
