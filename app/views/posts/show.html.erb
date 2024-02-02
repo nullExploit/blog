@@ -1,8 +1,11 @@
 <div class="row g-5">
     <div class="col-md-8">
-      <%= render %>
 
       <%= render @post %>
+
+      <%= render "form-comment", comment: @comment %>
+
+      <%= render "index-comment", comments: @post.comments %>
 
       <div>
         <%= link_to "Edit this post", edit_post_path(@post) %> |
